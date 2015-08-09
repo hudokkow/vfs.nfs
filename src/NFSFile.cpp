@@ -18,7 +18,7 @@
  *
  */
 
-#include "kodi/libXBMC_addon.h"
+#include "libXBMC_addon.h"
 #include "platform/threads/mutex.h"
 #include <fcntl.h>
 #include <map>
@@ -38,8 +38,8 @@ ADDON::CHelper_libXBMC_addon *XBMC           = NULL;
 
 extern "C" {
 
-#include "kodi/kodi_vfs_dll.h"
-#include "kodi/IFileTypes.h"
+#include "kodi_vfs_dll.h"
+#include "IFileTypes.h"
 
 static bool GetDirectoryFromExportList(const std::string& strPath, std::vector<VFSDirEntry>& items)
 {

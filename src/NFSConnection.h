@@ -26,9 +26,9 @@
 #include <stdint.h>
 #include <string>
 
-#include <platform/threads/mutex.h>
+#include "platform/threads/mutex.h"
 
-#include "kodi/kodi_vfs_types.h"
+#include "kodi_vfs_types.h"
 
 class CNFSConnection : public PLATFORM::CMutex
 {     
